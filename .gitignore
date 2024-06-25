@@ -160,6 +160,7 @@ OAI_CONFIG_LIST
 # AutoGen Studio DB
 **/*.sqlite
 
+# Any credential files
 credentials.env
 
 # PyCharm
