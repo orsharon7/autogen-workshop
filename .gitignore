@@ -157,6 +157,9 @@ cython_debug/
 # AutoGen Credentials
 OAI_CONFIG_LIST
 
+# AutoGen Studio DB
+**/*.sqlite
+
 credentials.env
 
 # PyCharm
