@@ -2,6 +2,24 @@
 
 Welcome to the Autogen Workshop repository, created by Or Sharon. This project aims to provide a comprehensive introduction to Autogen, a cutting-edge tool for automating code generation tasks. Whether you're interested in enhancing your development workflow, incorporating AI-driven code generation into your projects, or exploring the capabilities of Autogen, this workshop is designed to equip you with the knowledge and skills you need.
 
+## Critical Configuration Instructions: OAI_CONFIG_LIST_SAMPLE
+
+Before running the sample code, it's imperative to carefully review and modify the `OAI_CONFIG_LIST_SAMPLE` file. This file contains essential configurations for connecting to various AI models, including GPT-4 and Azure OpenAI deployments. **Failure to correctly configure this file could result in the sample code not functioning as expected.**
+
+### Steps to Configure:
+
+1. **Modify the Content**: Replace placeholder values (e.g., `<your OpenAI API key here>`, `<your Azure OpenAI deployment name>`) with your actual API keys and deployment names.
+2. **Rename the File**: Change the file name from `OAI_CONFIG_LIST_SAMPLE` to `OAI_CONFIG_LIST` to make it recognizable by the sample code.
+3. **Version Compatibility**: If you are using `pyautogen v0.1.x` with Azure OpenAI, replace `"base_url"` with `"api_base"` in the configurations. Use `pip list` to verify the installed version of `pyautogen`.
+4. **Model Selection**: The default model is set to `gpt-4` due to its compatibility and performance with AutoGen. If you opt for a different model, be prepared to adjust system prompts accordingly, especially for models like `GPT-3.5-turbo` which may not perform as well.
+
+### Important Notes:
+
+- **GPT-4 as Default**: GPT-4 is recommended for its proven effectiveness with AutoGen. Switching to a different model may necessitate significant adjustments to system prompts and could introduce risks related to alignment and safety.
+- **Caution with Non-OpenAI or Azure Models**: Utilizing models outside of OpenAI or Azure's offerings could pose additional risks. Exercise caution and thoroughly evaluate any such models before integration.
+
+This configuration is critical for the successful operation of the sample code. Please ensure all steps are followed meticulously to avoid any issues.
+
 ## Getting Started
 
 Follow these steps to get started with the Autogen Workshop:
