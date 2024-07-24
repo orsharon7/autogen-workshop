@@ -157,11 +157,13 @@ cython_debug/
 # AutoGen Credentials
 OAI_CONFIG_LIST
 
-# AutoGen Studio DB
+# AutoGen Studio Files and DB
 **/*.sqlite
+autogenstudio/
 
 # Any credential files
 credentials.env
+
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
