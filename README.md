@@ -10,7 +10,7 @@ Before running the sample code, it's imperative to carefully review and modify t
 
 1. **Modify the Content**: Replace placeholder values (e.g., `<your OpenAI API key here>`, `<your Azure OpenAI deployment name>`) with your actual API keys and deployment names.
 2. **Rename the File**: Change the file name from `OAI_CONFIG_LIST_SAMPLE` to `OAI_CONFIG_LIST` to make it recognizable by the sample code.
-3. **Version Compatibility**: If you are using `pyautogen v0.1.x` with Azure OpenAI, replace `"base_url"` with `"api_base"` in the configurations. Use `pip list` to verify the installed version of `pyautogen`.
+3. **Version Compatibility**: If you are using `ag2 v0.1.x` with Azure OpenAI, replace `"base_url"` with `"api_base"` in the configurations. Use `pip list` to verify the installed version of `ag2`.
 4. **Model Selection**: The default model is set to `gpt-4` due to its compatibility and performance with AutoGen. If you opt for a different model, be prepared to adjust system prompts accordingly, especially for models like `GPT-3.5-turbo` which may not perform as well.
 
 ### Important Notes:
